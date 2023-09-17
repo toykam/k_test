@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:k_test/map_screen/map_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  dotenv.load();
   runApp(const MyApp());
 }
 
